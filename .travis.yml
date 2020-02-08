@@ -4,7 +4,6 @@ language: python
 
 services:
   - postgresql
-  - mysql
 
 addons:
   postgresql: "11"
