@@ -204,7 +204,7 @@ html_show_copyright = True
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'rabid_armadillo_doc'
+htmlhelp_basename = 'django_dag_cte_doc'
 
 # -- Options for LaTeX output --------------------------------------------------
 
@@ -222,7 +222,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'rabid_armadillo.tex', u'Rabid Armadillo',
+  ('index', 'django_dag_cte.tex', u'Django DAG CTE',
    u'<copyright_owner>', 'manual'),
 ]
 
@@ -252,7 +252,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'rabid_armadillo', u'Rabid Armadillo',
+    ('index', 'django_dag_cte', u'Django DAG CTE',
      [u'<copyright_owner>'], 1)
 ]
 
@@ -266,8 +266,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'rabid_armadillo', u'Rabid Armadillo',
-   u'<copyright_owner>', 'Rabid Armadillo', 'Rabid Armadillo is a library to help armadillos with their rabies problems.',
+  ('index', 'django_dag_cte', u'Django DAG CTE',
+   u'<copyright_owner>', 'Django DAG CTE', 'Django DAG CTE is a library to help armadillos with their rabies problems.',
    'Miscellaneous'),
 ]
 

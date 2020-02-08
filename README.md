@@ -1,5 +1,6 @@
-# Rabid Armadillo (aka Django App Template) [![Build Status](https://<travis_domain>/<your_travis_handle>/<your_repo_name>.svg?branch=master)](https://<travis_domain>/<your_travis_handle>/<your_repo_name>)
-
+# Django DAG CTE (aka Django App Template) 
+[![Build Status](https://travis-ci.com/octue/django-dag-cte.svg?branch=master)](https://travis-ci.com/octue/django-dag-cte)
+[![codecov](https://codecov.io/gh/octue/django-dag-cte/branch/master/graph/badge.svg)](https://codecov.io/gh/octue/django-dag-cte)
 
 This is a template repository for when you want to create a new django app. It gives you, out of the box:
 - preconfigured coverage
@@ -20,7 +21,7 @@ This is a template repository on GitHub. You can use it as a template when creat
 ### Start a repo
 
 Create your own repository on github, using this repo as a template. Call it what you like. 
-In this example, let's say your github username is `armadillo-queen` and your new repository is called `django-rabid-armadillo`.
+In this example, let's say your github username is `armadillo-queen` and your new repository is called `django-dag-cte`.
 
 ### Replace template items
 
@@ -28,14 +29,14 @@ Do find and replace throughout, working your way through this list of replacemen
 
 | Search  | Replace (Example) | Description |
 |-------|-------|-------|
-| <your_repo_name> | `django-rabid-armadillo` | The github repository name. Convention for django apps seems to be hyphenating rather than using snake case, but do what you want. I assume the package name is the same as the gh repo name.|
-| <your_github_handle> | `armadillo-queen` | Your github handle |                              
+| <your_repo_name> | `django-dag-cte` | The github repository name. Convention for django apps seems to be hyphenating rather than using snake case, but do what you want. I assume the package name is the same as the gh repo name.|
+| octue | `armadillo-queen` | Your github handle |                              
 | <travis_domain> | `travis-ci.com` | Almost always `travis-ci.com` for me, but I think travis also have travis-ci.org for public stuff so make sure you're on the right domain. | 
 | <your_travis_handle> | `armadillo-queen` | Possibly the same as your github handle, depends how you log into travis |
 | <copyright_owner> | Tom Clark | The copyright owner's name. Probably you, or your company |
-| `rabid_armadillo` | `rabid_armadillo` | The module name of your app, which is importable in python (ie hyphens don't work. Stick to snake case!). Search and replace the whole of everything! |
-| `RabidArmadillo` | | Replace with the capitalised camel case version of your app name |
-| `Rabid Armadillo` | Rabid Armadillo | Human-readable, capitalised, app name |
+| `django_dag_cte` | `django_dag_cte` | The module name of your app, which is importable in python (ie hyphens don't work. Stick to snake case!). Search and replace the whole of everything! |
+| `DjangoDagCte` | | Replace with the capitalised camel case version of your app name |
+| `Django DAG CTE` | Django DAG CTE | Human-readable, capitalised, app name |
 
 ### Update setup.py
 

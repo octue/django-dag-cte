@@ -4,7 +4,7 @@
 License
 =======
 
-<copyright_owner> maintains **django-rabid-armadillo** as an open source project, under the MIT license.
+<copyright_owner> maintains **django-dag-cte** as an open source project, under the MIT license.
 
 The boring bit
 ==============
@@ -33,5 +33,5 @@ SOFTWARE.
 Third Party Libraries
 =====================
 
-**django-rabid-armadillo** includes or is linked against the following third party libraries:
+**django-dag-cte** includes or is linked against the following third party libraries:
 

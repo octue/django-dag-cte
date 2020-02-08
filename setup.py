@@ -17,14 +17,14 @@ with open('README.md') as f:
     readme_text = f.read()
 
 setup(
-    name='rabid_armadillo',
+    name='django_dag_cte',
     version='0.0.1',
-    description='An app to save the aprmadillos',
+    description='Directed Acyclic Graphs with in-database recursion using Common Table Expressions',
     long_description=readme_text,
     long_description_content_type="text/markdown",
-    author='<your_github_handle>',
+    author='octue',
     author_email='withheld.find@me.at.github.com',
-    url='https://github.com/<your_github_handle/django-rabid-armadillo',
+    url='https://github.com/octue/django-dag-cte',
     packages=find_packages(exclude=('tests', 'docs')),
     license='MIT',
     classifiers=[
@@ -39,6 +39,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'django>=2.1',
+        'django-cte>=1.1.4',
     ],
-    keywords=['django', 'armadillos']
+    keywords=['django', 'recursion', 'recursive', 'directed', 'acyclic', 'graph', 'dag', 'postgres', 'cte']
 )

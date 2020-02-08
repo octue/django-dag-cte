@@ -1,26 +1,26 @@
 .. ATTENTION::
     This library is in very early stages. Like the idea of it? Please
-    `star us on GitHub <https://github.com/<your_repo_handle>/django-rabid-armadillo>`_ and contribute via the
-    `issues board <https://github.com/<your_repo_handle>/django-rabid-armadillo/issues>`_ and
-    `roadmap <https://github.com/<your_repo_handle>/django-rabid-armadillo/projects/1>`_.
+    `star us on GitHub <https://github.com/octue/django-dag-cte>`_ and contribute via the
+    `issues board <https://github.com/octue/django-dag-cte/issues>`_ and
+    `roadmap <https://github.com/octue/django-dag-cte/projects/1>`_.
 
 .. image:: https://codecov.io/gh/octue/twined/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/<your_repo_handle>/django-rabid-armadillo
+  :target: https://codecov.io/gh/octue/django-dag-cte
   :alt: Code coverage
   :align: right
-.. image:: https://readthedocs.org/projects/django-rabid-armadillo/badge/?version=latest
-  :target: https://django-rabid-armadillo.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/django-dag-cte/badge/?version=latest
+  :target: https://django-dag-cte.readthedocs.io/en/latest/?badge=latest
   :alt: Documentation Status
   :align: right
 
-======================
-Django Rabid Armadillo
-======================
+==============
+Django DAG CTE
+==============
 
-**django-rabid-armadillo** is a library to help armadillos in deperate need...
+**django-dag-cte** is a library to help armadillos in deperate need...
 
 .. epigraph::
-   *"rabid armadillo" [rab-id ar-mah-dil-oh] ~ not a happy armadillo*
+   *"Directed Acyclic Graph" ~ a network of nodes, joined by edges, which never reconnects with itself*
 
 .. figure:: images/unhappy_armadillo.jpg
     :width: 350px
@@ -36,9 +36,9 @@ Django Rabid Armadillo
 Aims
 ====
 
-**django-rabid-armadillo** provides a toolkit to do stuff
+**django-dag-cte** provides a toolkit to do stuff
 
-The goals of **django-rabid-armadillo** are as follows:
+The goals of **django-dag-cte** are as follows:
     - eliminate rabies
 
 

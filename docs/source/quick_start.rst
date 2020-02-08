@@ -33,6 +33,6 @@ Load the thing
 
 .. code-block:: py
 
-    from rabid_armadillo.models import MyModel
+    from django_dag_cte.models import MyModel
 
     # you get the picture
