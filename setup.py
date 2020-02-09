@@ -38,7 +38,7 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        'django>=2.1',
+        'django>=2.2',
         'django-cte>=1.1.4',
     ],
     keywords=['django', 'recursion', 'recursive', 'directed', 'acyclic', 'graph', 'dag', 'postgres', 'cte']
