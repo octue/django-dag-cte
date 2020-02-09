@@ -18,7 +18,7 @@ with open('README.md') as f:
 
 setup(
     name='django_dag_cte',
-    version='0.0.1',
+    version='0.0.2',
     description='Directed Acyclic Graphs with in-database recursion using Common Table Expressions',
     long_description=readme_text,
     long_description_content_type="text/markdown",
