@@ -15,7 +15,7 @@ class AbstractNode(models.Model):
     node_id = AutoField(primary_key=True)
 
     # Parents-Children relationship (the `children` strand) using a Directed Acyclic Graph
-    parents = models.ManyToManyField('self', related_name='children', symmetrical=False)
+    parents = models.ManyToManyField('self', related_name='children', symmetrical=False, blank=True)
 
     # TODO implement the recursive view for closure and ancestry
     # Note this creates an unmanaged `*Closure` table which is a table view, unmanaged by Django.

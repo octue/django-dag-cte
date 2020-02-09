@@ -18,7 +18,7 @@ with open('README.md') as f:
 
 setup(
     name='django_dag_cte',
-    version='0.0.1',
+    version='0.0.2',
     description='Directed Acyclic Graphs with in-database recursion using Common Table Expressions',
     long_description=readme_text,
     long_description_content_type="text/markdown",
@@ -38,7 +38,7 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        'django>=2.1',
+        'django>=2.2',
         'django-cte>=1.1.4',
     ],
     keywords=['django', 'recursion', 'recursive', 'directed', 'acyclic', 'graph', 'dag', 'postgres', 'cte']

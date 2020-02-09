@@ -4,7 +4,6 @@ language: python
 
 services:
   - postgresql
-  - mysql
 
 addons:
   postgresql: "11"
@@ -35,11 +34,10 @@ install:
   - pip install tox-travis
   - pip install codecov
 
-# Create MySQL and Postgres databases
+# CreatePostgres database
 before_script:
   - psql --version
   - psql -c 'CREATE DATABASE travis_ci_test;' -U postgres
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS travis_ci_test;' -uroot
 
 # Run the tests with tox
 script:
@@ -50,7 +48,7 @@ after_success:
   - coverage xml && codecov -f coverage.xml --commit=$TRAVIS_COMMIT
 
 # Will deploy to pypi if the version in setup.py has been bumped, otherwise deployment skips.
-#  Note - the first deploy to pypi has to be done manually)
+#  Note - the first deploy to pypi has to be done manually
 #    deploy:
 #      provider: pypi
 #      skip_cleanup: true
