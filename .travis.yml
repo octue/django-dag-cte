@@ -11,10 +11,13 @@ addons:
     packages:
     - postgresql-11
     - postgresql-client-11
-
+    - postgresql-server-dev-11
+    - postgresql-client-common
+    - postgresql-common
+    
 env:
   global:
-  - PGPORT=5433
+  - PGPORT="5433"
   
 matrix:
   include:
@@ -31,6 +34,10 @@ matrix:
     - python: 3.7
       env: TOXENV=py37-dj22-postgres
 
+before_install:
+  - "if [ ! -z $PGVERSION ]; then sudo cp /etc/postgresql/{9.6,$PGVERSION}/main/pg_hba.conf; fi"
+  - "if [ ! -z $PGVERSION ]; then sudo service postgresql restart $PGVERSION; fi"
+  
 # before_install:
 #   - sudo apt-get update
 #   - sudo apt-get --yes remove postgresql\*
@@ -45,7 +52,7 @@ install:
 # CreatePostgres database
 before_script:
   - psql --version
-  - psql -c 'CREATE DATABASE travis_ci_test;' -U postgres
+  - psql -p ${PGPORT} -c 'CREATE DATABASE travis_ci_test;' -U postgres
 
 # Run the tests with tox
 script:
