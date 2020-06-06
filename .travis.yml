@@ -7,7 +7,15 @@ services:
 
 addons:
   postgresql: "11"
+  apt:
+    packages:
+    - postgresql-11
+    - postgresql-client-11
 
+env:
+  global:
+  - DATABASE_PORT=5433
+  
 matrix:
   include:
     - python: 3.5
@@ -23,12 +31,12 @@ matrix:
     - python: 3.7
       env: TOXENV=py37-dj22-postgres
 
-before_install:
-  - sudo apt-get update
-  - sudo apt-get --yes remove postgresql\*
-  - sudo apt-get install -y postgresql-11 postgresql-client-11
-  - sudo cp /etc/postgresql/{9.6,11}/main/pg_hba.conf
-  - sudo service postgresql restart 11
+# before_install:
+#   - sudo apt-get update
+#   - sudo apt-get --yes remove postgresql\*
+#   - sudo apt-get install -y postgresql-11 postgresql-client-11
+#   - sudo cp /etc/postgresql/{9.6,11}/main/pg_hba.conf
+#   - sudo service postgresql restart 11
 
 install:
   - pip install tox-travis
