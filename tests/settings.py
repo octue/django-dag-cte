@@ -19,8 +19,8 @@ def get_db_conf():
             'NAME': 'travis_ci_test',
             'USER': 'postgres',
             'PASSWORD': '',
-            'HOST': '127.0.0.1',
-            'PORT': '',
+            'HOST': os.environ.get('PGHOST', '127.0.0.1'),
+            'PORT': os.environ.get('PGPORT', '5432')
         }
 
 
