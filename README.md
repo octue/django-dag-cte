@@ -1,4 +1,4 @@
-# Django DAG CTE (aka Django App Template) 
+# Django DAG CTE
 [![codecov](https://codecov.io/gh/octue/django-dag-cte/branch/master/graph/badge.svg)](https://codecov.io/gh/octue/django-dag-cte)
 
 
